@@ -30,3 +30,17 @@ http://localhost:3000/api/seed
 
 * MongoDB
 * NestJS
+
+# Production build
+
+1. Crear el archivo ```env.prod```
+2. Llenar las variables de entorno de prod
+3. Crear la nueva imagen con el comando
+```
+yarn docker:build
+```
+
+4. Por si ya han creado antes la imagen, para levantarla solo ejecutan:
+```
+yarn docker:start:prod
+```
